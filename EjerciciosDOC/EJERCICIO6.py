@@ -1,17 +1,17 @@
 #Realiza una función separar(lista) que toma una lista de números enteros y devuelve dos listas ordenadas. 
 #la primera con los números pares y la segunda con los números impares.
-
+#Para ordenar una lista automáticamente puedes utilizar el método sort()
 lista = [17, 24, 2, 13, 5, 4, 6, 1, 89, 0, 3, 7, 55, 25, 30, 8, 68, 156]
 
 def separar(lista):
     pares = []
     impares = []
 
-    for n in lista:
-        if n%2 == 0:
-            pares.append(n)
+    for num in lista:
+        if num%2 == 0:
+            pares.append(num)
         else:
-            impares.append(n)
+            impares.append(num)
          
     pares.sort()
     impares.sort()

@@ -1,8 +1,8 @@
-#Realizar una función llamada agregar_una_vez(lista, el) que reciba una lista y un elemento. 
+# Realizar una función llamada agregar_una_vez(lista, el) que reciba una lista y un elemento. 
 # La función debe añadir el elemento al final de la lista con la condición de no repetir ningún elemento. 
 # Además, si este elemento ya se encuentra en la lista se debe invocar un error de tipo ValueError 
 # que debes capturar y mostrar este mensaje en su lugar: Error: Imposible añadir elementos duplicados => [elemento].
-#Cuando tengas la función intenta añadir los siguientes valores a la lista 10, -2, “Hola” y luego muestre su contenido.
+# Cuando tengas la función intenta añadir los siguientes valores a la lista 10, -2, “Hola” y luego muestre su contenido.
 
 elementos = [1, 5, -2]
 print(elementos)
@@ -14,11 +14,11 @@ def agregar_una_vez(lista, elemento):
     lista.append(elemento)
     
 try:
+    agregar_una_vez(elementos, "Hola")
     agregar_una_vez(elementos, 10)
     agregar_una_vez(elementos, -2)
-    agregar_una_vez(elementos, "Hola")
-except ValueError as e:
-    print(e.args[0])
+except ValueError as elemento1:
+    print(elemento1.args[0])
 else:
     print("Elementos agregados correctamente")
 finally:
